@@ -1,1 +1,10 @@
-
+ SELECT DISTINCT
+           co19.MemberID,
+           'Diabetes Hba1C Level' AS Measure,
+           LTRIM(RTRIM(LEFT(co19.[DiabetesHba1C Level], 1))) AS Measurestatus,
+           co19.CreatedDate,
+           CO19.DataDate,
+           co19.tin
+    FROM [adi].[copAetMaCareopps] co19
+    WHERE co19.[DiabetesHba1C Level]<> ''
+and convert(numeric(4,2),left(LTRIM(RTRIM([DiabetesHba1C Level])),4)) >= 8.5 
