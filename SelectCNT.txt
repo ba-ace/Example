@@ -1,4 +1,1 @@
-SELECT * FROM [adi].[stg_claims]
-WHERE RECEIVEDMONTH = '201905' 
-SELECT COUNT(*) FROM [adi].[stg_claims]
-WHERE RECEIVEDMONTH = '201905' 
+
