@@ -1,4 +1,4 @@
- SELECT DISTINCT
+SELECT DISTINCT
            co19.MemberID,
            'Diabetes Hba1C Level' AS Measure,
            LTRIM(RTRIM(LEFT(co19.[DiabetesHba1C Level], 1))) AS Measurestatus,
